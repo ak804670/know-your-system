@@ -7,7 +7,7 @@ require("dotenv").config()
 const port = process.env.PORT
 
 const operatingSystem= os.type()
-app.use("/",(req,res)=>{
+app.get("/",(req,res)=>{
     res.send(`<h1>${operatingSystem}</h1>`)
 })
 
